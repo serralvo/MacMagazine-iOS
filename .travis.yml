@@ -1,8 +1,14 @@
 language: objective-c
 
 before_install:
+  - brew install rbenv ruby-build
+  - echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+  - source ~/.bash_profile
+  - rbenv install 2.4.0
+  - rbenv global 2.4.0
+  - ruby -v
   - sudo gem install xcpretty
-  - gem install bundler
+  - sudo gem install bundler
   - bundle install
   - bundle exec pod install
 
