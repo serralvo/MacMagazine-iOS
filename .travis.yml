@@ -10,7 +10,7 @@ before_install:
   - sudo gem install xcpretty
   - sudo gem install bundler
   - bundle install
-  - bundle exec pod install
+  - bundle exec pod install < a < b
 
 branches:
   only:
