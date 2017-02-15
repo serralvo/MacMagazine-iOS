@@ -23,4 +23,4 @@ osx_image: xcode8.2
 xcode_sdk: iphonesimulator9.3
 
 script:
-  - xcodebuild -workspace MacMagazine.xcworkspace -scheme 'MacMagazine' -sdk iphonesimulator build | xcpretty -c && exit ${PIPESTATUS[0]}
+  - xcodebuild test -workspace MacMagazine.xcworkspace -scheme 'MacMagazine' -sdk iphonesimulator build | xcpretty -c && exit ${PIPESTATUS[0]}
