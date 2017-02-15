@@ -9,7 +9,10 @@ before_install:
   - ruby -v
   - sudo gem install xcpretty
   - sudo gem install bundler
+  - sudo gem install cocoapods
   - bundle install
+  - bundle exec pod keys set MMMCrashlyticsAPIKey "-"
+  - bundle exec pod keys set MMMNotificationsAPIKey "-"
   - bundle exec pod install
 
 branches:
