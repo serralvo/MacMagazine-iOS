@@ -22,7 +22,7 @@ branches:
 xcode_workspace: MacMagazine.xcworkspace
 xcode_scheme: MacMagazine
 
-osx_image: xcode8.2
+osx_image: xcode8.1
 xcode_sdk: iphonesimulator9.3
 
 script:
